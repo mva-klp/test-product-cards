@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Продукты</title>
+  </head>
+  <body>
+    <main class="main-content">
+      <section class="products">
+        <h2 class="products-title">Выбери свой продукт</h2>
+        <ul class="cards">
+          <li class="card">
+            <img class="card-img" src="img/photo-card-1.jpg" width="290" height="245" alt="Упаковка">
+            <h3 class="card-title">Увлажняющий мусс</h3>
+            <p class="card-description">Увлажняющий мусс с витаминами и экстрактами обеспечивает коже глубокое увлажнение и сияние. Подходит для всех типов кожи, особенно для сухой и чувствительной.</p>
+						<button class="button order-btn" type="button" name="popup-button">Нажми на меня</button>
+          </li>
+          <li class="card">
+            <img class="card-img" src="img/photo-card-2.jpg" width="290" height="245" alt="Упаковка">
+            <h3 class="card-title">Увлажняющая маска</h3>
+            <p class="card-description">Увлажняющая маска сделает кожу более увлажненной, мягкой и сияющей. Содержит натуральные ингредиенты, которые помогают улучшить текстуру и тон кожи.</p>
+						<button class="button order-btn" type="button" name="popup-button">Нажми на меня</button>
+          </li>
+          <li class="card">
+            <img class="card-img" src="img/photo-card-3.jpg" width="290" height="245" alt="Упаковка">
+            <h3 class="card-title">Гель для умывания</h3>
+            <p class="card-description">Гель для умывания бережно и эффективно очищает кожу, удаляет избыток жира и загрязнения, не вызывая сухости и раздражения. Освежает и увлажняет кожу.</p>
+						<button class="button order-btn" type="button" name="popup-button">Нажми на меня</button>
+          </li>
+          <li class="card">
+            <img class="card-img" src="img/photo-card-4.jpg" width="290" height="245" alt="Упаковка">
+            <h3 class="card-title">Подарочный набор №1</h3>
+            <p class="card-description">Подарочный набор №1 - идеальный подарок для заботы о коже. Включает в себя несколько продуктов для ухода за кожей лица, обогащенных натуральными компонентами.</p>
+						<button class="button order-btn" type="button" name="popup-button">Нажми на меня</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+		<div class="modal modal-close">
+			<div class="modal-container">
+				<h2 class="modal-title">Форма обратной связи</h2>
+				<button class="modal-close-button" type="button">
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+				<form class="form" action="" method="post" enctype="multipart/form-data" novalidate>
+					<div class="form-name field-group">
+						<label class="field-title" for="name">Ваше имя: <abbr title="Это поле обязательное" aria-label="required">*</abbr></label>
+						<input class="field-input" type="text" id="name" name="name" minlength="3" maxlength="50" placeholder="Например, Владимир" required>
+						<span class="error"></span>
+					</div>
+
+					<div class="form-phone field-group">
+						<label class="field-title" for="phone">Ваш телефон: <abbr title="Это поле обязательное" aria-label="required">*</abbr></label>
+						<input class="field-input" type="tel" id="phone" name="phone" pattern="\+7[0-9]{10}" placeholder="Например, +71231234567" required>
+						<span class="error"></span>
+					</div>
+
+					<div class="form-email field-group">
+						<label class="field-title" for="email">Ваша почта: <abbr title="Это поле обязательное" aria-label="required">*</abbr></label>
+						<input class="field-input" type="email" id="email" name="email" placeholder="Например, mail@mail.ru" required>
+						<span class="error"></span>
+					</div>
+
+					<div class="form-date field-group">
+						<label class="field-title" for="date-delivery">Дата доставки: <abbr title="Это поле обязательное" aria-label="required">*</abbr></label>
+						<input class="field-input" type="date" id="date-delivery" name="date-delivery" placeholder="Укажите дату" value="" min="">
+						<span class="error"></span>
+					</div>
+
+					<div class="form-files field-group">
+						<label class="field-title" for="files">Прикрепите до 2 файлов: <abbr title="Это поле обязательное" aria-label="required">*</abbr></label>
+						<input class="file-input" type="file" id="files" name="files" type="file" data-max-files="2" multiple>
+						<span class="error"></span>
+					</div>
+
+					<button class="button form-button" type="submit">Отправить</button>
+				</form>
+			 </div>
+			</div>
+			<script src="js/script.js"></script>
+  </body>
+</html>
